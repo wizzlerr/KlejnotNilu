@@ -18,12 +18,18 @@ public class Game {
     private int timePassed;
     public int leftMistakes;
     public ArrayList<Rectangle> dollars = new ArrayList<>();
+
+    public boolean goToNextLevel = false;
+
+
     private int combo;
     private int hitComboCounter;
     private int comboBoost;
     private int maxSize;
-    private int level = 1;
+    public int level = 1;
     public boolean added = false;
+    public boolean gameOver = false;
+    private int dollarsToAdd;
 
     public Game(){
         score=0;
@@ -34,6 +40,21 @@ public class Game {
         timePassed=501;
         comboBoost=5;
         maxSize=10;
+        dollarsToAdd= level * 10-1;
+    }
+
+    public Game(int level, int leftMistakes,boolean added, int score){
+        this.score=score;
+        this.leftMistakes=leftMistakes;
+        combo=0;
+        hitComboCounter = 3;
+        dollars.add(new Rectangle(1,1,60,25));
+        timePassed=501;
+        comboBoost=5;
+        maxSize=10;
+        this.level=level;
+        this.added=added;
+        dollarsToAdd= level * 10-1;
 
     }
 
@@ -49,7 +70,7 @@ public class Game {
 
     public void hitRolex(){
         score+=5;
-        getHitCombo("rolex");
+
     }
 
     public void hitJewel(){
@@ -64,6 +85,35 @@ public class Game {
         else return ret;
     }
 
+
+
+    public int getLeftMistakes() {
+        return leftMistakes;
+    }
+
+
+
+
+
+
+
+
+    public int getScore() {
+        return score;
+    }
+
+    public void generateDollars(){
+
+            if(dollars.size()<=dollarsToAdd){
+                dollars.add(new Rectangle(generateRandomX(), 0, 60, 25));
+                added=false;
+                dollarsToAdd--;
+            }
+            else
+                added=true;
+
+    }
+
     public boolean spawnDollar(){
         if(timePassed>50){
             timePassed=0;
@@ -73,22 +123,6 @@ public class Game {
             timePassed++;
             return false;
         }
-    }
-
-    public int getLeftMistakes() {
-        return leftMistakes;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void generateDollars(){
-            if(dollars.size()<=level*10)
-                dollars.add(new Rectangle(generateRandomX(), 0, 60, 25));
-            else
-                added=true;
-
     }
 
 }
