@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/ibxm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/jgrapht-core-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/jnlp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/lwjgl_util_applet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/slick.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/slick-examples.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/millgaus/lib/tinylinepp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>
