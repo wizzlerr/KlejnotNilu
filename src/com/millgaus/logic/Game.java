@@ -29,7 +29,7 @@ public class Game {
     public int level = 1;
     public boolean added = false;
     public boolean gameOver = false;
-    private int dollarsToAdd;
+    public int dollarsToAdd;
 
     public Game(){
         score=0;
@@ -115,7 +115,7 @@ public class Game {
     }
 
     public boolean spawnDollar(){
-        if(timePassed>50){
+        if(timePassed>50-0.1*level){
             timePassed=0;
             return true;
         }

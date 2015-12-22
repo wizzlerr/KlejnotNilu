@@ -41,7 +41,7 @@ public class StartGameState extends AbstractState implements StateCommmons {
         g.drawImage(test,mousePosX(),720-200);
         g.drawString("Score: "+thisGame.getScore(),50,100);
         g.drawString("Lives: "+thisGame.getLeftMistakes(),50,120);
-        g.drawString("Balls: "+thisGame.dollars.size(),50,140);
+        g.drawString("Item to go: "+thisGame.dollars.size(),50,140);
         g.drawString("Level: "+thisGame.level,50,160);
 
         if(!thisGame.gameOver){
