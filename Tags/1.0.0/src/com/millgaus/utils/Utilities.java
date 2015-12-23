@@ -13,7 +13,7 @@ public class Utilities {
     public static HashMap<String, Integer> gameStates = new HashMap<String, Integer>();
     public static int gameStatesId = 0;
     public static int currentGameState = 0;
-    public final static String gameVersion = "0.0.2";
+    public final static String gameVersion = "1.0.0";
 
     public Image backgound;
 

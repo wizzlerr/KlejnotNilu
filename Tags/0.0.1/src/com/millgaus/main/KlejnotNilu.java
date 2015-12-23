@@ -21,6 +21,7 @@ public class KlejnotNilu extends StateBasedGame {
     }
 
     public static void main (String[] args) throws SlickException {
+
         AppGameContainer appGameContainer = new AppGameContainer(new KlejnotNilu("Klejnot Nilu "+ Utilities.gameVersion));
         appGameContainer.setDisplayMode(1280,720,false);
         appGameContainer.setTargetFrameRate(60);
